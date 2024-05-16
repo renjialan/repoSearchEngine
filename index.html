@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Repository Search Engine</h1>
+        <form id="searchForm">
+            <label for="repoUrl">GitHub Repository URL:</label>
+            <input type="text" id="repoUrl" name="repoUrl" required>
+            <label for="searchQuery">Search Query:</label>
+            <input type="text" id="searchQuery" name="searchQuery" required>
+            <a href="https://github.com/llvm/torch-mlir/blob/main/projects/pt1/e2e_testing/main.py%E2%80%9D" id="searchLink">Search</a>        </form>
+        <div id="searchResults"></div>
+    </div>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+     </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
